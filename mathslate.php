@@ -17,8 +17,10 @@
 /**
  * MathSlate editor popup.
  *
- * @package   tinymce_mathslate
- * @copyright 2013 Daniel Thies
+ * @package   tinymce_chemslate
+ * @package tinymce_chemslate
+ * @copyright 2014 Geoffrey Rowland
+ * modified from tinymce_mathslate @copyright 2013 Daniel Thies
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -27,9 +29,9 @@ define('NO_MOODLE_COOKIES', true);
 require('../../../../../config.php');
 
 $PAGE->set_context(context_system::instance());
-$PAGE->set_url('/lib/editor/tinymce/plugins/mathslate/mathslate.php');
+$PAGE->set_url('/lib/editor/tinymce/plugins/chemslate/chemslate.php');
 $PAGE->set_pagelayout('embedded');
-$PAGE->set_title(get_string('title','tinymce_mathslate'));
+$PAGE->set_title(get_string('title','tinymce_chemslate));
 
 if (isset($SESSION->lang)) {
     // Language is set via page url param.
