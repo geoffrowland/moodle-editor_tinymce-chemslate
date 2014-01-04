@@ -1,4 +1,4 @@
-tinymce_mathslate
+tinymce_chemslate
 =================
 
 Moodle tinymce plugin for constructing chemical equations
