@@ -1,4 +1,4 @@
-YUI.add('moodle-tinymce_mathslate-dialogue', function (Y, NAME) {
+YUI.add('moodle-tinymce_chemslate-dialogue', function (Y, NAME) {
 
 // This file is part of Moodle - http://moodle.org/
 //
@@ -16,14 +16,15 @@ YUI.add('moodle-tinymce_mathslate-dialogue', function (Y, NAME) {
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Atto text editor mathslate plugin.
+ * TinyMCE text editor chemslate plugin.
  *
  * @package    editor-tinymce
- * @subpackage    mathslate
- * @copyright  2013 Daniel Thies  <dthies@ccal.edu>
+ * @subpackage    chemslate
+ * @copyright  2014 Geoffrey Roland
+ * modified from MathSlate @copyright  2013 Daniel Thies  <dthies@ccal.edu>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-M.tinymce_mathslate = M.tinymce_mathslate || {};
+M.tinymce_mathslate = M.tinymce_chemslate || {};
 M.tinymce_mathslate={
     /**
      * The window used to hold the editor.
@@ -61,12 +62,12 @@ M.tinymce_mathslate={
      */
 
     init : function(params) {
-        M.tinymce_mathslate.config=params.config||M.local_mathslate.config;
+        M.tinymce_chemslate.config=params.config||M.local_chemslate.config;
         var dialogue = Y.one('#'+params.elementid);
         
         var editorID=Y.guid();
         dialogue.append('<div id="'+editorID+'" ></div>');
-        var me=new M.local_mathslate.Editor('#'+editorID,M.tinymce_mathslate.config);
+        var me=new M.local_chemslate.Editor('#'+editorID,M.tinymce_chemslate.config);
         var cancel=Y.one('#'+editorID).appendChild(Y.Node.create('<button>Cancel</button>'));
         var displayTex=Y.one('#'+editorID).appendChild(Y.Node.create('<button>Display TeX</button>'));
         var inlineTex=Y.one('#'+editorID).appendChild(Y.Node.create('<button>Inline TeX</button>'));
@@ -85,11 +86,11 @@ M.tinymce_mathslate={
             
         MathJax.Hub.Queue(['Typeset',MathJax.Hub,me.node.generateID()]);
 
-        M.tinymce_mathslate.dialogue = dialogue;
+        M.tinymce_chemslate.dialogue = dialogue;
         
     }
 
 };
 
 
-}, '@VERSION@', {"requires": ["escape", "moodle-local_mathslate-editor"]});
+}, '@VERSION@', {"requires": ["escape", "moodle-local_chemslate-editor"]});
