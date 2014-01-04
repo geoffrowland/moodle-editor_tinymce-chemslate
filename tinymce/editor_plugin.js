@@ -2,7 +2,7 @@
         // Load plugin specific language pack
         //tinymce.PluginManager.requireLangPack('example');
 
-        tinymce.create('tinymce.plugins.MathSlatePlugin', {
+        tinymce.create('tinymce.plugins.ChemSlatePlugin', {
                 /**
                    * @param {tinymce.Editor} ed Editor instance that the plugin is initialized in.
                  * @param {string} url Absolute URL to where the plugin is located.
@@ -10,10 +10,10 @@
                 init : function(ed, url) {
                         // Register the command so that it can be invoked by using tinyMCE.activeEditor.execCommand('mceExample');
             lang = tinyMCE.activeEditor.getParam('language');
-                        ed.addCommand('mathSlate', function() {
+                        ed.addCommand('chemSlate', function() {
 
                                 ed.windowManager.open({
-                                        file : ed.getParam("moodle_plugin_base") + '/mathslate/mathslate.php?lang=' + lang,
+                                        file : ed.getParam("moodle_plugin_base") + '/chemslate/chemslate.php?lang=' + lang,
                                         width : 400,
                                         height : 400,
                                         inline : 1
@@ -24,14 +24,14 @@
                         });
 
                         // Register button
-                        ed.addButton('mathslate', {
-                                title : 'MathSlate',
-                                cmd : 'mathSlate',
-                                image : url + '/img/mathslate.png'
+                        ed.addButton('chemslate', {
+                                title : 'ChemSlate',
+                                cmd : 'chemSlate',
+                                image : url + '/img/chemslate.png'
                         });
                         // Add a node change handler, selects the button in the UI when a image is selected
                         ed.onNodeChange.add(function(ed, cm, n) {
-                                cm.setActive('mathSlate', n.nodeName == 'IMG');
+                                cm.setActive('chemSlate', n.nodeName == 'IMG');
                         });
                 },
 
@@ -41,10 +41,10 @@
                  */
                 getInfo : function() {
                         return {
-                                longname : 'MathSlate',
-                                author : 'Daniel Thies',
-                                authorurl : 'http://www.ccal.edu',
-                                infourl : 'http://elearning.ccal.edu',
+                                longname : 'ChemSlate',
+                                author : 'Geoffrey Rowland',
+                                authorurl : 'http://www.blueliaslearning.com',
+                                infourl : 'http://www.blueliaslearning.com',
                                 version : "0.2"
                         };
                 }
