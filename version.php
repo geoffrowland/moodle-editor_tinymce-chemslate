@@ -17,18 +17,19 @@
 /**
  * TinyMCE MathSlate plugin version details.
  *
- * @package   tinymce_mathslate
- * @copyright 2013 Daniel Thies
+ * @package   tinymce_chemslate
+ * @copyright 2014 Geoffrey Roland
+ * modified from tinymce_mathslate @copyright Daniel Thies 2013
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 // The current plugin version (Date: YYYYMMDDXX).
-$plugin->version   = 2013050511;
+$plugin->version   = 2014010400;
 // Required Moodle version.
 $plugin->requires  = 2012050100;
 // Full name of the plugin (used for diagnostics).
-$plugin->component = 'tinymce_mathslate';
+$plugin->component = 'tinymce_chemslate';
 // Require Mathslate common modules.
 $plugin->dependencies = array('local_mathslate' => 2013080900);
