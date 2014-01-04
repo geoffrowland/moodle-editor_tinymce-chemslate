@@ -15,12 +15,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * MathSlate editor popup.
+ * ChemSlate  editor popup.
  *
  * @package   tinymce_chemslate
- * @package tinymce_chemslate
  * @copyright 2014 Geoffrey Rowland
- * modified from MathSlate @copyright 2013 Daniel Thies
+ * modified   from MathSlate @copyright 2013 Daniel Thies
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -48,12 +47,12 @@ if (array_key_exists($lang, $langmapping)) {
     $lang = $langmapping[$lang];
 }
 
-if (!file_exists("$CFG->dirroot/lib/mathslate/$lang/mathslate.php")) {
+if (!file_exists("$CFG->dirroot/lib/chemslate/lang/$lang/chemslate.php")) {
     $lang = 'en';
 }
 
 $editor = get_texteditor('tinymce');
-$plugin = $editor->get_plugin('mathslate');
+$plugin = $editor->get_plugin('chemslate');
 
 // Prevent https security problems.
 $relroot = preg_replace('|^http.?://[^/]+|', '', $CFG->wwwroot);
@@ -66,13 +65,13 @@ $PAGE->requires->js('/lib/editor/tinymce/tiny_mce/3.5.8/tiny_mce_popup.js',true)
 //Loads YUI and MathJax it is included in theme
 print $OUTPUT->header();
 
-$PAGE->requires->strings_for_js(array( 'mathslate'),'tinymce_mathslate');
+$PAGE->requires->strings_for_js(array( 'chemslate'),'tinymce_chemslate');
 
 $elementid=$PAGE->bodyid;
 
-$PAGE->requires->yui_module('moodle-tinymce_mathslate-dialogue',
-                                'M.tinymce_mathslate.init',
-                                array(array('elementid'=>$elementid, 'config'=>$CFG->wwwroot . '/local/mathslate/config.json')),
+$PAGE->requires->yui_module('moodle-tinymce_chemslate-dialogue',
+                                'M.tinymce_chemslate.init',
+                                array(array('elementid'=>$elementid, 'config'=>$CFG->wwwroot . '/local/chemslate/config.json')),
                                 true);
 
 print $OUTPUT->footer();
