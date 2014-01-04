@@ -45,7 +45,7 @@
                                 author : 'Geoffrey Rowland',
                                 authorurl : 'http://www.blueliaslearning.com',
                                 infourl : 'http://www.blueliaslearning.com',
-                                version : "0.2"
+                                version : "0.1"
                         };
                 }
         });
