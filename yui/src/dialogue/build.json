@@ -1,7 +1,7 @@
 {
-  "name": "moodle-tinymce_mathslate-dialogue",
+  "name": "moodle-tinymce_chemslate-dialogue",
   "builds": {
-    "moodle-tinymce_mathslate-dialogue": {
+    "moodle-tinymce_chemslate-dialogue": {
       "jsfiles": [
         "dialogue.js"
       ]
