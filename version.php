@@ -15,11 +15,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * TinyMCE MathSlate plugin version details.
+ * TinyMCE ChemSlate plugin version details.
  *
  * @package   tinymce_chemslate
  * @copyright 2014 Geoffrey Roland
- * modified from tinymce_mathslate @copyright Daniel Thies 2013
+ * modified from ChemSlate @copyright 2013 Daniel Thies
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
