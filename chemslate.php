@@ -20,7 +20,7 @@
  * @package   tinymce_chemslate
  * @package tinymce_chemslate
  * @copyright 2014 Geoffrey Rowland
- * modified from tinymce_mathslate @copyright 2013 Daniel Thies
+ * modified from MathSlate @copyright 2013 Daniel Thies
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
