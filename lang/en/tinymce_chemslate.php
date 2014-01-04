@@ -19,11 +19,11 @@
  *
  * @package   tinymce_chemslate
  * @copyright 2014 Geoffrey Rowland
- * modified from MathSlate @copyright 2013 Daniel Thies
+ * modified   from MathSlate @copyright 2013 Daniel Thies
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'Insert equation';
+$string['pluginname'] = 'Insert chemical equation';
 $string['title'] = 'ChemSlate Editor';
 
 /* All lang strings used from TinyMCE JavaScript code must be named 'pluginname:stringname', no need to create langs/en_dlg.js */
