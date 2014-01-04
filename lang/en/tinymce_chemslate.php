@@ -15,15 +15,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for DragMath editor integration plugin.
+ * Strings for ChemSlate chemical equation editor integration plugin.
  *
- * @package   tinymce_mathslate
- * @copyright 2013 Daniel Thies
+ * @package   tinymce_chemslate
+ * @copyright 2014 Geoffrey Rowland
+ * modified from MathSlate @copyright 2013 Daniel Thies
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 $string['pluginname'] = 'Insert equation';
-$string['title'] = 'MathSlate Editor';
+$string['title'] = 'ChemSlate Editor';
 
 /* All lang strings used from TinyMCE JavaScript code must be named 'pluginname:stringname', no need to create langs/en_dlg.js */
-$string['mathslate:desc'] = 'Insert equation';
+$string['chemslate:desc'] = 'Insert chemical equation';
