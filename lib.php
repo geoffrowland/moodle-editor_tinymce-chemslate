@@ -19,7 +19,6 @@ defined('MOODLE_INTERNAL') || die();
 /**
  * Plugin for ChemSlate equation editor.
  *
- * @package   tinymce_mathslate
  * @package tinymce_chemslate
  * @copyright 2014 Geoffrey Rowland
  * modified from MathSlate @copyright 2013 Daniel Thies
