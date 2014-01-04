@@ -22,7 +22,7 @@ defined('MOODLE_INTERNAL') || die();
  * @package   tinymce_mathslate
  * @package tinymce_chemslate
  * @copyright 2014 Geoffrey Rowland
- * modified from tinymce_mathslate @copyright 2013 Daniel Thies
+ * modified from MathSlate @copyright 2013 Daniel Thies
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class tinymce_chemslate extends editor_tinymce_plugin {
