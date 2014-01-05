@@ -19,13 +19,13 @@ YUI.add('moodle-tinymce_chemslate-dialogue', function (Y, NAME) {
  * TinyMCE text editor chemslate plugin.
  *
  * @package    editor-tinymce
- * @subpackage    chemslate
- * @copyright  2014 Geoffrey Roland
- * modified from MathSlate @copyright  2013 Daniel Thies  <dthies@ccal.edu>
+ * @subpackage chemslate
+ * @copyright  2014 Geoffrey Rowland <rowland.geoff@gmail.com>
+ * modified    from MathSlate @copyright  2013 Daniel Thies <dthies@ccal.edu>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-M.tinymce_mathslate = M.tinymce_chemslate || {};
-M.tinymce_mathslate={
+M.tinymce_chemslate = M.tinymce_chemslate || {};
+M.tinymce_chemslate={
     /**
      * The window used to hold the editor.
      *
@@ -73,11 +73,11 @@ M.tinymce_mathslate={
         var inlineTex=Y.one('#'+editorID).appendChild(Y.Node.create('<button>Inline TeX</button>'));
 
         displayTex.on('click',function(){
-            tinyMCEPopup.editor.execCommand('mceInsertContent', false,  '\\['+me.output('tex')+'\\]');
+            tinyMCEPopup.editor.execCommand('mceInsertContent', false,  '\\[\\ce{'+me.output('tex')+'}\\]');
             tinyMCEPopup.close();
             });
         inlineTex.on('click',function(){
-            tinyMCEPopup.editor.execCommand('mceInsertContent', false,  '\\('+me.output('tex')+'\\)');
+            tinyMCEPopup.editor.execCommand('mceInsertContent', false,  '\\(\\ce{'+me.output('tex')+'}\\)');
             tinyMCEPopup.close();
             });
         cancel.on('click',function(){

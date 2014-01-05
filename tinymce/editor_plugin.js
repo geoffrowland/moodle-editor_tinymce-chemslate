@@ -43,13 +43,13 @@
                         return {
                                 longname : 'ChemSlate',
                                 author : 'Geoffrey Rowland',
-                                authorurl : 'http://www.blueliaslearning.com',
-                                infourl : 'http://www.blueliaslearning.com',
+                                authorurl : 'rowland.geoff@gmail.com',
+                                infourl : 'rowland.geoff@gmail.com',
                                 version : "0.1"
                         };
                 }
         });
 
         // Register plugin
-        tinymce.PluginManager.add('mathslate', tinymce.plugins.MathSlatePlugin);
+        tinymce.PluginManager.add('chemslate', tinymce.plugins.ChemSlatePlugin);
 })();

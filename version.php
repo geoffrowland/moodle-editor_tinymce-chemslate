@@ -18,8 +18,7 @@
  * TinyMCE ChemSlate plugin version details.
  *
  * @package   tinymce_chemslate
- * @copyright 2014 Geoffrey Roland
- * modified from MathSlate @copyright 2013 Daniel Thies
+ * @copyright 2013 Daniel Thies
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -31,5 +30,5 @@ $plugin->version   = 2014010400;
 $plugin->requires  = 2012050100;
 // Full name of the plugin (used for diagnostics).
 $plugin->component = 'tinymce_chemslate';
-// Require Mathslate common modules.
-$plugin->dependencies = array('local_mathslate' => 2013080900);
+// Require Chemslate common modules.
+$plugin->dependencies = array('local_chemslate' => 2013080900);

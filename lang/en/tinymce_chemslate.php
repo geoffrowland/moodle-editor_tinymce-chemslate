@@ -15,11 +15,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for ChemSlate chemical equation editor integration plugin.
+ * Strings for DragMath editor integration plugin.
  *
  * @package   tinymce_chemslate
- * @copyright 2014 Geoffrey Rowland
- * modified   from MathSlate @copyright 2013 Daniel Thies
+ * @copyright  2014 Geoffrey Rowland <rowland.geoff@gmail.com>
+ * modified    from MathSlate @copyright  2013 Daniel Thies <dthies@ccal.edu>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

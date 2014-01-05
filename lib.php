@@ -17,11 +17,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * Plugin for ChemSlate equation editor.
+ * Plugin for ChemSlate chemical equation editor.
  *
- * @package tinymce_chemslate
- * @copyright 2014 Geoffrey Rowland
- * modified from MathSlate @copyright 2013 Daniel Thies
+ * @package   tinymce_chemslate
+ * @copyright  2014 Geoffrey Rowland <rowland.geoff@gmail.com>
+ * modified    from MathSlate @copyright  2013 Daniel Thies <dthies@ccal.edu>s
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class tinymce_chemslate extends editor_tinymce_plugin {

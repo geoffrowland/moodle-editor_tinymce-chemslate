@@ -15,11 +15,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * ChemSlate  editor popup.
+ * ChemSlate editor popup.
  *
  * @package   tinymce_chemslate
- * @copyright 2014 Geoffrey Rowland
- * modified   from MathSlate @copyright 2013 Daniel Thies
+ * @copyright 2013 Daniel Thies
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -30,7 +29,7 @@ require('../../../../../config.php');
 $PAGE->set_context(context_system::instance());
 $PAGE->set_url('/lib/editor/tinymce/plugins/chemslate/chemslate.php');
 $PAGE->set_pagelayout('embedded');
-$PAGE->set_title(get_string('title','tinymce_chemslate));
+$PAGE->set_title(get_string('title','tinymce_chemslate'));
 
 if (isset($SESSION->lang)) {
     // Language is set via page url param.
