@@ -71,7 +71,7 @@ $elementid=$PAGE->bodyid;
 
 $PAGE->requires->yui_module('moodle-tinymce_chemslate-dialogue',
                                 'M.tinymce_chemslate.init',
-                                array(array('elementid'=>$elementid, 'config'=>$CFG->wwwroot . '/local/chemslate/config.json')),
+                                array(array('elementid'=>$elementid, 'config'=>$CFG->wwwroot . '/lib/editor/tinymce/plugins/chemslate/config.json')),
                                 true);
 
 print $OUTPUT->footer();
