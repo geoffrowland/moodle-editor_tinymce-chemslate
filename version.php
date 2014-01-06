@@ -31,4 +31,4 @@ $plugin->requires  = 2012050100;
 // Full name of the plugin (used for diagnostics).
 $plugin->component = 'tinymce_chemslate';
 // Require Chemslate common modules.
-$plugin->dependencies = array('local_chemslate' => 2013080900);
+$plugin->dependencies = array('local_mathslate' => 2013080900);
