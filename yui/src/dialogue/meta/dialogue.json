@@ -2,7 +2,7 @@
   "moodle-tinymce_chemslate-dialogue": {
     "requires": [
         "escape",
-        "moodle-local_chemslate-editor"
+        "moodle-local_mathslate-editor"
     ]
   }
 }

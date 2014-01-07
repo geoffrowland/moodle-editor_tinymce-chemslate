@@ -65,7 +65,7 @@ M.tinymce_chemslate={
         
         var editorID=Y.guid();
         dialogue.append('<div id="'+editorID+'" ></div>');
-        var me=new M.local_chemslate.Editor('#'+editorID,M.tinymce_chemslate.config);
+        var me=new M.local_mathslate.Editor('#'+editorID,M.tinymce_chemslate.config);
         var cancel=Y.one('#'+editorID).appendChild(Y.Node.create('<button>Cancel</button>'));
         var displayTex=Y.one('#'+editorID).appendChild(Y.Node.create('<button>Display TeX</button>'));
         var inlineTex=Y.one('#'+editorID).appendChild(Y.Node.create('<button>Inline TeX</button>'));
